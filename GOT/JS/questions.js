@@ -265,8 +265,8 @@ function getQuestion() {
 
 $("#question-card #q-card-text").hide();
 $(".next-button").hide();
-$("#question-card").append("<button class='start-button' onclick='getQuestion()'>Click to Start</button>");
 
+$("#question-card").append("<button class='start-button' onclick='getQuestion()'>Click to Start</button>");
 
 $(".start-button").click(function () {
     $("#question-card #q-card-text").show();

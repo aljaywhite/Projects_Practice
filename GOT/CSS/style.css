@@ -70,6 +70,15 @@ h3 {
     box-shadow: 0px 5px 10px #999;
     align: center;
 }
+.btn-primary .btn-lg {
+  background-color: #bbff99;
+  border: none;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 0px 5px 10px #999;
+}
 
 /*.player {
     display: inline-block;
@@ -82,3 +91,20 @@ h3 {
     border-radius: 50%;
     box-shadow: 0px 5px 15px #999;
 }*/
+
+/*modal styles*/
+.modal-body .form-horizontal .col-sm-2,
+.modal-body .form-horizontal .col-sm-10 {
+    width: 100%
+}
+
+.modal-body .form-horizontal .control-label {
+    text-align: left;
+}
+.modal-body .form-horizontal .col-sm-offset-2 {
+    margin-left: 15px;
+}
+
+#createAccount {
+  float: left;
+}
