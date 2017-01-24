@@ -1,5 +1,5 @@
 /*
-Fav Colors: 
+Fav Colors:
 #99ffcc: Light Green
 #ccffff: Light Blue
 */
@@ -19,3 +19,7 @@ Fav Colors:
 ul.dropdown-menu {
     text-align: center;
 */
+
+body {
+    background: #000 url("/Users/alanwhite/Google Drive/Code Projects/ZED/Projects_Practice/Typhoid Beach/Images/Inception Shoreline Dark.jpg") no-repeat center center fixed;
+}
