@@ -22,4 +22,32 @@ ul.dropdown-menu {
 
 body {
     background: #000 url("/Users/alanwhite/Google Drive/Code Projects/ZED/Projects_Practice/Typhoid Beach/Images/Inception Shoreline Dark.jpg") no-repeat center center fixed;
+    padding-bottom: 70px;
 }
+/****************Navbar Styles--Bootstrap****************/
+          /*Title*/
+.navbar-default .navbar-brand
+{font-family: 'Poiret One', cursive;
+  font-size: 2em;
+  font-weight: bold;
+  color: #ff5050;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: rgba(255, 80, 80, .6);
+}
+          /*Link*/
+.navbar-default .navbar-nav > li > a {
+    color: #ff5050;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: rgba(255, 80, 80, .6);
+  }
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+      color: #ff5050;
+      background-color: rgba(255, 80, 80, .1);
+  }
