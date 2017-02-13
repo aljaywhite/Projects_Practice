@@ -1,0 +1,228 @@
+/****************************
+Custom, iPhone Retina
+****************************/
+@media only screen and (min-width : 320px) {
+  body {
+    background-color: rgba(255, 80, 80, .7);
+  }
+
+  .navbar-default .navbar-brand {
+    font-family: 'Poiret One', cursive;
+    font-size: 2em;
+    font-weight: bold;
+    color: #52ffd4;
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    color: #52ffd4;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+color: rgba(255, 80, 80, 1);
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: rgba(255, 80, 80, .7);
+  background-color: rgba(0, 0, 0, .0);
+}
+
+
+
+
+  /* separator */
+  .separator {
+    width: 50%;
+    padding-top: 60px;
+    border-top: 1px solid #52ffd4;
+  }
+
+  .footer {
+    background-color: #000;
+    border: none;
+    opacity: .8;
+  }
+}
+
+/****************************
+Extra Small Devices, Phones
+*****************************/
+@media only screen and (min-width : 480px) {
+  body {
+    background-color: rgba(255, 80, 80, .7);
+  }
+
+  .navbar-default .navbar-brand {
+    font-family: 'Poiret One', cursive;
+    font-size: 2em;
+    font-weight: bold;
+    color: #52ffd4;
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    color: #52ffd4;
+  }
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus {
+  color: rgba(255, 80, 80, .6);
+  }
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    color: rgba(255, 80, 80, .7);
+    background-color: rgba(0, 0, 0, .0);
+  }
+
+  /* separator */
+  .separator {
+    width: 50%;
+    padding-top: 60px;
+    border-top: 1px solid #52ffd4;
+  }
+
+  .footer {
+    background-color: #000;
+    border: none;
+    opacity: .8;
+  }
+}
+
+/****************************
+Small Devices, Tablets
+****************************/
+@media only screen and (min-width : 768px) {
+  body {
+  background: linear-gradient(90deg, #52ffd4, #ff5050);
+  padding-top: 65px;
+  }
+
+  /*Title*/
+  .navbar-default .navbar-brand {
+  font-family: 'Poiret One', cursive;
+  font-size: 2em;
+  font-weight: bold;
+  color: #ff5050;
+  }
+
+  /*Link*/
+  .navbar-default .navbar-nav > li > a {
+  color: #ff5050;
+  }
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus {
+  color: rgba(255, 80, 80, .6);
+  }
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    color: #ff5050;
+    background-color: rgba(255, 80, 80, .1);
+  }
+  /* separator */
+  .separator {
+    width: 50%;
+    padding-top: 60px;
+    border: none;
+  }
+
+  /* footer */
+  .footer {
+      background-color: #000;
+      border: none;
+      opacity: .8;
+  }
+}
+
+/****************************
+Medium Devices, Desktops
+****************************/
+@media only screen and (min-width : 992px) {
+  body {
+  background: linear-gradient(90deg, #52ffd4, #ff5050);
+  padding-top: 65px;
+  }
+
+  /*Title*/
+  .navbar-default .navbar-brand {
+  font-family: 'Poiret One', cursive;
+  font-size: 2em;
+  font-weight: bold;
+  color: #ff5050;
+  }
+
+  /*Link*/
+  .navbar-default .navbar-nav > li > a {
+  color: #ff5050;
+  }
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus {
+  color: rgba(255, 80, 80, .6);
+  }
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    color: #ff5050;
+    background-color: rgba(255, 80, 80, .1);
+  }
+
+  /* separator */
+  .separator {
+    width: 50%;
+    padding-top: 60px;
+    border: none;
+  }
+
+  /* footer */
+  .footer {
+      background-color: #000;
+      border: none;
+      opacity: .8;
+  }
+}
+
+/****************************
+Large Devices, Wide Screens
+****************************/
+@media only screen and (min-width : 1200px) {
+  body {
+  background: linear-gradient(90deg, #52ffd4, #ff5050);
+  padding-top: 65px;
+  }
+
+  /*Title*/
+  .navbar-default .navbar-brand {
+  font-family: 'Poiret One', cursive;
+  font-size: 2em;
+  font-weight: bold;
+  color: #ff5050;
+  }
+
+  /*Link*/
+  .navbar-default .navbar-nav > li > a {
+  color: #ff5050;
+  }
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus {
+  color: rgba(255, 80, 80, .6);
+  }
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    color: #ff5050;
+    background-color: rgba(255, 80, 80, .1);
+  }
+
+  /* separator */
+  .separator {
+    width: 50%;
+    padding-top: 60px;
+    border: none;
+  }
+
+  /* footer */
+  .footer {
+      background-color: #000;
+      border: none;
+      opacity: .8;
+  }
+}
