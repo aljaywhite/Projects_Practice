@@ -52,36 +52,6 @@ li span {
     color: #52ffd4;
 }
 
-#playlistEp {
-  list-style-type: none;
-  text-decoration: none;
-  padding: 0;
-  color: #52ffd4;
-  background-color: #000;
-  opacity: .8;
-  margin: 0 0;
-  width: 100%;
-}
-
-#playlistEp li {
-  color: #52ffd4;
-  padding: 10px 12px;
-}
-
-#playlistEp li:not(:last-child) {
-  border-bottom: 1px solid rgba(82, 255, 212, .8);
-}
-
-#playlistEp li>a {
-  color: #52ffd4;
-}
-
-#playlistEp .current-song a {
-  text-decoration: none;
-  color: rgba(255, 80, 80, .6);
-}
-
-
 .row-EP{
   padding-top: 60px;
 }
@@ -137,7 +107,18 @@ li span {
 .footer {
     bottom: 0;
     width: 100%;
+    max-height: 75px;
 }
+.footer ul li {
+  display: inline-block;
+  float: right;
+}
+.footer ul li>a {
+  max-width: 150px;
+  display: block;
+  padding: 0 15px;
+}
+
 
 
 
