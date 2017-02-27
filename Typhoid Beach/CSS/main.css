@@ -247,8 +247,31 @@ li span {
   transform: scale(1);
 }
 
+.carousel-control .icon-prev, .carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-left, .carousel-control
+.glyphicon-chevron-right, .glyphicon-circle-arrow-left {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+}
 
+.carousel-indicators {
+  background-color: rgba(0, 0, 0, 0)
+}
 
+.carousel-indicators .active {
+  background-color: #52ffd4;
+  border: 1px solid #fff;
+  box-shadow: 0 0 5px #ff5050;
+}
+
+.carousel-indicators li {
+    background-color: #000\9;
+    background-color: rgba(0, 0, 0, .6);
+    border: 1px solid #52ffd4;
+    border-radius: 10px;
+}
 /********************************************************************************
 *********************************************************************************
                           Media Queries
