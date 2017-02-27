@@ -21,7 +21,6 @@ body {
   height: 100vh;
 	/*background-size: cover;*/
   background: rgba(255, 80, 80, .6) url("/Users/alanwhite/Google Drive/Code Projects/ZED/Projects_Practice/Typhoid Beach/Images/Typhoid-Back-Green.png") no-repeat center fixed;
-
   font-family: "Poiret One", sans-serif;
   font-weight: bold;
 }
@@ -53,15 +52,20 @@ li span {
     color: #52ffd4;
 }
 
-.row-EP,
-.row-Party {
-  padding-top: 60px;
+.container-fluid {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.row,
-.contain-vid {
+.row {
+  margin-top: 60px;
+  padding: 60px 30px;
+}
+
+.vid {
   padding-bottom: 60px;
 }
+
 
 /****************Navbar Styles--Bootstrap****************/
 
@@ -82,8 +86,8 @@ li span {
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus  {
-  color: rgba(255, 80, 80, .6);
-  text-shadow: 0 0 5px #52ffd4;
+  color: #52ffd4;
+  text-shadow: 0 0 5px #fff;
 }
 
 .navbar-default .navbar-nav>.active>a,
@@ -106,22 +110,64 @@ li span {
     background-color: #52ffd4;
 }
 
+/****************Table Styles****************/
 
+.table {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #52ffd4;
+}
+
+.table>tbody>tr>td {
+  border: none;
+}
+
+.table>tbody>tr:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px #fff;
+  text-shadow: 0 0 10px #fff;
+}
+
+.table>tbody>tr:not(:last-child) {
+  border-bottom: 1px solid rgba(82, 255, 212, 0.5);
+}
 
 /****************Footer Styles--Bootstrap****************/
 .footer {
-    bottom: 0;
-    width: 100%;
-    max-height: 75px;
+  margin-top: 30px;
+  padding: 30px 0;
+  background-color: #000;
+  border: none;
+  opacity: .8;
+  color: #52ffd4;
 }
-.footer ul li {
-  display: inline-block;
-  float: right;
+
+.bottom-footer {
+  border-top: solid 1px #52ffd4;
+  margin-top: 15px;
+  padding-top: 15px;
+  color: #52ffd4
 }
-.footer ul li>a {
-  max-width: 150px;
-  display: block;
-  padding: 0 15px;
+
+.footer-nav {
+  text-align: right;
+}
+
+.footer-nav li {
+  display: inline;
+}
+
+.footer-nav li:not(:first-child)::before {
+  content: '| ';
+  padding: 0px 15px;
+}
+
+.footer-nav a {
+  color: #52ffd4;
+}
+
+.footer-nav a:hover {
+  text-shadow: 0 0 10px #fff;
+  text-decoration: none;
 }
 
 .hovereffect {
