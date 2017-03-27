@@ -1,21 +1,15 @@
-/*
-Fav Colors:
-#99ffcc: Light Green
-#ccffff: Light Blue
-*/
-/*
-.navbar-default {
-    background: -webkit-linear-gradient(left, #99ffcc, #ccffff);
-}
-.navbar-brand {
-    font-family: 'Poiret One', cursive;
-}
-.collapse, .navbar-collapse a {
-    text-align: center;
-}
-ul.dropdown-menu {
-    text-align: center;
-*/
+/********************************************************************************
+*********************************************************************************
+____COLORS____
+#000 | rgba(0, 0, 0, 1)
+#ff5050 | rgba(255, 80, 80, 1)
+#52ffd4 | rgba(82, 255, 212, 1)
+*********************************************************************************
+********************************************************************************/
+
+/*********************************************************************************
+                        General Styles
+********************************************************************************/
 
 body {
   height: 100vh;
@@ -59,7 +53,8 @@ li span {
 
 .row {
   margin-top: 60px;
-  padding: 60px 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .vid {
@@ -67,7 +62,9 @@ li span {
 }
 
 
-/****************Navbar Styles--Bootstrap****************/
+/*********************************************************************************
+                        Navbar Styles--Bootstrap
+********************************************************************************/
 
 /* navbar */
 .navbar-default {
@@ -110,7 +107,9 @@ li span {
     background-color: #52ffd4;
 }
 
-/****************Table Styles****************/
+/*********************************************************************************
+                        Schedule Table Styles
+********************************************************************************/
 
 .table {
   background-color: rgba(0, 0, 0, 0.8);
@@ -131,44 +130,30 @@ li span {
   border-bottom: 1px solid rgba(82, 255, 212, 0.5);
 }
 
-/****************Footer Styles--Bootstrap****************/
-.footer {
-  margin-top: 30px;
-  padding: 30px 0;
-  background-color: #000;
-  border: none;
-  opacity: .8;
-  color: #52ffd4;
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: #52ffd4;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
+  outline: 0 none;
 }
 
-.bottom-footer {
-  border-top: solid 1px #52ffd4;
-  margin-top: 15px;
-  padding-top: 15px;
-  color: #52ffd4
-}
-
-.footer-nav {
-  text-align: right;
-}
-
-.footer-nav li {
-  display: inline;
-}
-
-.footer-nav li:not(:first-child)::before {
-  content: '| ';
-  padding: 0px 15px;
-}
-
-.footer-nav a {
-  color: #52ffd4;
-}
-
-.footer-nav a:hover {
-  text-shadow: 0 0 10px #fff;
-  text-decoration: none;
-}
+/*********************************************************************************
+                        Hover Effect Images
+********************************************************************************/
 
 .hovereffect {
   width: 100%;
@@ -247,6 +232,10 @@ li span {
   transform: scale(1);
 }
 
+/*********************************************************************************
+                        Carousel Styles--Merch
+********************************************************************************/
+
 .carousel-control .icon-prev, .carousel-control .icon-next,
 .carousel-control .glyphicon-chevron-left, .carousel-control
 .glyphicon-chevron-right, .glyphicon-circle-arrow-left {
@@ -263,7 +252,7 @@ li span {
 .carousel-indicators .active {
   background-color: #52ffd4;
   border: 1px solid #fff;
-  box-shadow: 0 0 5px #ff5050;
+  box-shadow: 0 0 5px #000;
 }
 
 .carousel-indicators li {
@@ -271,6 +260,121 @@ li span {
     background-color: rgba(0, 0, 0, .6);
     border: 1px solid #52ffd4;
     border-radius: 10px;
+}
+
+/*********************************************************************************
+                        Contact Form Styles
+********************************************************************************/
+
+.contact {
+  background-color: rgba(0, 0, 0, .6);
+  color: #52ffd4;
+}
+.form-horizontal .form-group {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.input-group-addon {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #52ffd4;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .6);
+    border: 1px solid #52ffd4;
+    border-radius: 4px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #52ffd4;
+    background-color: rgba(0, 0, 0, .6);
+    background-image: none;
+    border: 1px solid #52ffd4;
+    border-radius: 4px;
+}
+
+input {
+  border-color: #52ffd4;
+}
+
+.btn-warning {
+    color: #52ffd4;
+    background-color: rgba(0, 0, 0, .6);
+    border-color: #52ffd4;
+}
+
+.btn-warning:hover {
+    color: #52ffd4;
+    background-color: rgba(0, 0, 0, 1);
+    border-color: #52ffd4;
+    text-shadow: 0 0 5px #fff;
+    box-shadow: 0 0 5px #fff;
+}
+
+legend {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #52ffd4;
+  border-bottom: 1px solid #52ffd4;
+}
+#success_message {
+    display: none;
+}
+
+#contact {
+  margin: 20px 0px;
+  padding: 20px 0px;
+}
+
+/*********************************************************************************
+                        Footer Styles--Bootstrap
+********************************************************************************/
+
+.footer {
+  margin-top: 30px;
+  padding: 30px 0;
+  background-color: #000;
+  border: none;
+  opacity: .8;
+  color: #52ffd4;
+}
+
+.bottom-footer {
+  border-top: solid 1px #52ffd4;
+  margin-top: 15px;
+  padding-top: 15px;
+  color: #52ffd4
+}
+
+.footer-nav, .footer {
+  text-align: center;
+    padding: 0px;
+}
+
+.footer-nav li {
+  display: inline;
+}
+
+.footer-nav li:not(:first-child)::before {
+  content: '| ';
+  padding: 0px 15px;
+}
+
+.footer-nav a {
+  color: #52ffd4;
+}
+
+.footer-nav a:hover {
+  text-shadow: 0 0 10px #fff;
+  text-decoration: none;
 }
 /********************************************************************************
 *********************************************************************************

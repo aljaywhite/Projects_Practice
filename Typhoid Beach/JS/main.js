@@ -1,36 +1,125 @@
-// audioPlayer();
-// function audioPlayer() {
-//   var currentSong = 0;
-//   $("#audioControlsEp")[0].src = $("#playlistEp li a")[0];
-//   $("#playlistEp li a").click(function(e){
-//     e.preventDefault();
-//     $("#audioControlsEp")[0].src = this;
-//     $("#audioControlsEp")[0].play();
-//     $("#playlistEp li").removeClass("current-song");
-//     currentSong = $(this).parent().index();
-//     $(this).parent().addClass("current-song");
-//   });
-//
-//   $("#audioControlsEp")[0].addEventListener("ended", function(){
-//     currentSong++;
-//     if(currentSong == $("#playlistEp li a").length)
-//     currentSong = 0;
-//     $("#playlistEp li").removeClass("current-song");
-//     $("#playlistEp li:eq("+currentSong+")").addClass("current-song");
-//     $("#audioControlsEp")[0].src = $("#playlistEp li a")[currentSong].href;
-//     $("#audioControlsEp")[0].toggle("play");
-//   });
-// }
+// ************************************************************************
+//             Contact Form Functions
+// ************************************************************************
+      
+$(document).ready(function() {
+  $('#contact_form').bootstrapValidator({
+      // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+      feedbackIcons: {
+          valid: 'glyphicon glyphicon-ok',
+          invalid: 'glyphicon glyphicon-remove',
+          validating: 'glyphicon glyphicon-refresh'
+      },
+      fields: {
+          first_name: {
+              validators: {
+                      stringLength: {
+                      min: 2,
+                  },
+                      notEmpty: {
+                      message: 'Please supply your first name'
+                  }
+              }
+          },
+           last_name: {
+              validators: {
+                   stringLength: {
+                      min: 2,
+                  },
+                  notEmpty: {
+                      message: 'Please supply your last name'
+                  }
+              }
+          },
+          email: {
+              validators: {
+                  notEmpty: {
+                      message: 'Please supply your email address'
+                  },
+                  emailAddress: {
+                      message: 'Please supply a valid email address'
+                  }
+              }
+          },
+          phone: {
+              validators: {
+                  notEmpty: {
+                      message: 'Please supply your phone number'
+                  },
+                  phone: {
+                      country: 'US',
+                      message: 'Please supply a vaild phone number with area code'
+                  }
+              }
+          },
+          address: {
+              validators: {
+                   stringLength: {
+                      min: 8,
+                  },
+                  notEmpty: {
+                      message: 'Please supply your street address'
+                  }
+              }
+          },
+          city: {
+              validators: {
+                   stringLength: {
+                      min: 4,
+                  },
+                  notEmpty: {
+                      message: 'Please supply your city'
+                  }
+              }
+          },
+          state: {
+              validators: {
+                  notEmpty: {
+                      message: 'Please select your state'
+                  }
+              }
+          },
+          zip: {
+              validators: {
+                  notEmpty: {
+                      message: 'Please supply your zip code'
+                  },
+                  zipCode: {
+                      country: 'US',
+                      message: 'Please supply a vaild zip code'
+                  }
+              }
+          },
+          comment: {
+              validators: {
+                    stringLength: {
+                      min: 10,
+                      max: 200,
+                      message:'Please enter at least 10 characters and no more than 200'
+                  },
+                  notEmpty: {
+                      message: 'Please supply a description of your project'
+                  }
+                  }
+              }
+          }
+      })
+      .on('success.form.bv', function(e) {
+          $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
+              $('#contact_form').data('bootstrapValidator').resetForm();
 
-$('.play').click(function(){
-    var $this = $(this);
-    var id = $this.attr('id').replace(/btn/, '');
-    $this.toggleClass('active');
-    if($this.hasClass('active')){
-        $this.html('<li id="btn1" class="play"><i class="fa fa-stop" aria-hidden="true"></i></li>');
-        $('audio[id^="song"]')[id-1].play();
-    } else {
-        $this.html('<li id="btn1" class="play"><i class="fa fa-play" aria-hidden="true"></i></li>');
-        $('audio[id^="song"]')[id-1].pause();
-    }
+          // Prevent form submission
+          e.preventDefault();
+
+          // Get the form instance
+          var $form = $(e.target);
+
+          // Get the BootstrapValidator instance
+          var bv = $form.data('bootstrapValidator');
+
+          // Use Ajax to submit form data
+          $.post($form.attr('action'), $form.serialize(), function(result) {
+              console.log(result);
+          }, 'json');
+      });
 });
